@@ -18,6 +18,9 @@ The tool requires a well-defined URL structure, like the following, to perform t
 
 To achieve the structure above, we use the following command:
 
+Sintaxis
+```awk '{print "ip"$1}' urls.txt  > clean_map.txt or awk '{print "ip/dir"$1}' urls.txt  > clean_map.txt```
+
 ``` awk '{print "http://10.10.75.87/joomla"$1}' urls.txt  > clean_map.txt  ```
 
 Now, it is just a matter of granting execution permissions and, of course, running the tool:
