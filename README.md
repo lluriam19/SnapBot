@@ -2,7 +2,7 @@
 
 I will use Gobuster to explain how to use the tool.
 
-My target will be a VM with the IP address 10.10.75.87, and the results discovered by Gobuster will be sent to a file called `echo urls.txt`:
+My target will be a VM with the IP address `10.10.75.87`, and the results discovered by Gobuster will be sent to a file called `urls.txt`:
 
 ![image](https://github.com/user-attachments/assets/dae98e74-3393-433b-b54b-3f4285498988)
 
@@ -11,14 +11,14 @@ After completing the exploration, the file will have output similar to the follo
 
 ![image](https://github.com/user-attachments/assets/8e0582e4-465f-4095-ab75-370e03ee30ae)
 
-The tool requires a well-defined URL structure, like the following, to perform the image captures inside a file called clean_urls.txt:
+The tool requires a well-defined URL structure, like the following, to perform the image captures inside a file called `clean_urls.txt`:
 
 ![image](https://github.com/user-attachments/assets/cb96b5ec-14a7-4499-a2b2-d098c531aef5)
 
 
 To achieve the structure above, we use the following command:
 
-awk '{print "http://10.10.75.87/joomla"$1}' urls.txt  > clean_map.txt 
+``` awk '{print "http://10.10.75.87/joomla"$1}' urls.txt  > clean_map.txt 
 
 Now, it is just a matter of granting execution permissions and, of course, running the tool:
 
