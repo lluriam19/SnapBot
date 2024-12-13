@@ -1,3 +1,29 @@
+**What does the script do?**
+
+* **Automates screenshot captures**: The script reads a file of URLs, iterates through each one, and takes a screenshot of every page using Chromium in headless mode.
+
+* **Saves images with unique names**: Screenshots are saved in an output directory and automatically named to avoid collisions by adding a timestamp to each file.
+
+* **Closes processes if necessary**: If the Chromium process keeps running after a certain time, the script terminates it to prevent orphan processes.
+
+* **Optimization and control**: The script efficiently manages captures, allows window size configurations, and suppresses unnecessary error messages.
+
+### Why is it useful?
+
+* **Massive website capture**: Ideal for web auditing projects, capture testing, or even generating visual reports.
+
+* **Automation of repetitive tasks**: Automates the capture process quickly and without manual intervention, saving time when collecting visual information from websites.
+
+* **Configurability**: The window size and output directory are easily adjustable to meet user requirements.
+
+### Technologies used:
+
+- Bash scripting  
+- Chromium (headless mode)  
+- Linux/Unix  
+
+This script is a valuable tool for cybersecurity professionals, web application testers, and anyone who needs to automate webpage screenshot capturing.
+
 **How to Use SnapBot**
 
 I will use Gobuster to explain how to use the tool.
