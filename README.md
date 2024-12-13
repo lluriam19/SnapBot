@@ -24,7 +24,7 @@
 
 This script is a valuable tool for cybersecurity professionals, web application testers, and anyone who needs to automate webpage screenshot capturing.
 
-**How to Use SnapBot**
+# **How to Use SnapBot**
 
 I will use Gobuster to explain how to use the tool.
 
